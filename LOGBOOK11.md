@@ -4,8 +4,13 @@
 
 A certificate authority is an entity that issues digital certificates. A digital certificate certifies the ownership of a public key by the named subject of the certificate. This allows others (relying parties) to rely upon signatures or on assertions made about the private key that corresponds to the certified public key.
 
-
 ### Tarefa 1
+
+Command:
+
+```bash
+openssl req -x509 -newkey rsa:4096 -sha256 -days 3650 -keyout ca.key -out ca.crt
+```
 
 <details>
     <summary>Generated key</summary>
@@ -13,58 +18,58 @@ A certificate authority is an entity that issues digital certificates. A digital
 
 ```bash
 -----BEGIN ENCRYPTED PRIVATE KEY-----
-MIIJnDBOBgkqhkiG9w0BBQ0wQTApBgkqhkiG9w0BBQwwHAQIa4uwaqYsihkCAggA
-MAwGCCqGSIb3DQIJBQAwFAYIKoZIhvcNAwcECL7d0njrOkNeBIIJSMlDB3UNr0ms
-uX1hVrLDon/WuI3jaEFFgWx++fTJgZ9Dcsr/Ouk0NZAIxau6KF+NrTY81Zc1x33R
-M7zJriQYn3DvdhLwU+uAdzyythxLSk7A78195HCSvSWugmXzEFGQM+jKWeXq3JQN
-pwscuVp5Zf/C4nXroB2Fy7lS7eamOlUX94MiQMzB84Bjr/BAO3ilww/FIXlN5gHq
-Kl9RPr+YBPD3dBhaK4dxaLTfN7FsOed/MRHydsoO5nMvN+EE/avQcKzyOEgFzD/R
-AQrS2Kj12GvckMWJKnWJF0p/wC4i3huWwNa4Et6K71eBonqsRmYAgx90C3s+Qs0p
-hxKaALrHiA29UskPskbPFRdnkNVvb9UTmy4N/pfTTdgYFVn5hq2QJpaTvAO6oXbM
-b5OZUd4Xy/fcjMMeoxeLsqVor+i8eQdzFi5lRQ+RLcKMBOZ9C6X/C0/Use8tVxMJ
-6k5nhZi8gU65ciiV4R5v5yCidV4x3zbJL/oBUkZOD961yUzx2QEeigh4VT4czbxA
-lFGRayx3Szzfshst2O7yIhoHsM3hveZZ3ZiG/C/wl3jYIp9yCZTPNjMpYfs3pF3q
-tdg1xspfZIQ3mdO3XDA2n/H8GhF9+WcG/mYUfFbWqYJ9rzW6Z/06rKxNm9pyK056
-Voo+3PS+fHb0dPJIJzRKN/YG6/1VVlaYqL9rY2lsq0ZfhirTxF927FyvsMJogOu6
-h8KFweyPRHEJnWnLmovz8UVAvnvFimglv5kSZ2wb3FVWuGge1q1vNUU6Gkggps4i
-csqe1r6l3bxK3+DreZcC08opQCRhiEWrBlWBmfzlHttrzPA860e4iPerSKkF+nQH
-9z3pN/NtRTKmPUEoft/NopPrYxD3mN0vM3utRLwnsB3Pcl0qUup2OAraYiNTgHnx
-8MmL4JGZDeYyk99H2X80NrzgqkIMQ8H0HlHfRiWSjPsERJtBQdOFVBkx1FDbjuPe
-b+8PoexF9WHP019eaIjPkFczyyW1x+dYvyKmdswVnSMiXJK91jlOFUEY7geZbgvQ
-rfVw181MZs2dBngHeOe+SNMAy3dYg4sL0OYmpdXmzoai9wgID8xA4OenjDWhOBmm
-qsGERe4Ga2AWL1EftzxaFUP3SxP8PI/i5XLJMcoeAz1Urh6AFB8SieVlEwF5TJZy
-nurEZGCe8h9N0Gfg2/ls+p4fd6uj7zTng/RC6LantNz/+Uj9b0v+XyKHPnJSzmUJ
-VXBDbunUVDS6hkLpd+G4mNiyDVrOFyDhtN5IZcs3PoFaZtuoH4DvtUgGGtOXgwZD
-U3AG62CD4/WiNZT3dBICvGHuV4xWCp8aeMTYE+Oc8+a5fu8omxtvZ90GQjLlIEkn
-JXq7y9sOwh9fdJicUfaFXrbhtNQ5GilNiO88mTt39JWAqU7/nS5AToqe0Nv2hR74
-XdQQa/gffhw79wmAWgeEggDGyrye4mWai3HGz59E2pUMCz41KfmUkIuyIgqB7zv6
-h2Ck7jTB2PEKtg8CcVaV/itGdz+ue9Agtb1mbay7JJg+RtZGz+0RU7gDu5Oe1I6j
-YAtrV7BKZsvjf2DvmcGIMe3v+hSBkKYcsWiVArP6T+2tf/8AXo85QMZaid8SyV78
-bJ19Si7J6bBWMXXV9KE5pV4gcN6aHHoRZdbqgCarAjsXEc9RrUWRMusZ1nf7q8v6
-wphAMGzZQ+7GmRrH3YfjHv9V7nj8urXj9NUXDks6Pe2SCU4vtw5dsfE5bDtzm511
-zmvlEbWwrLP4ZE6giakq6FJJ+0JvrNoNvMfXVoajdCH1QYWUslN8mvfzBYcEXmTr
-UDQLKpW2zAPE9EaNZt6uNfZBI5s8ymKTMxULmzSAVq8AyN+/n8lJRLYUVvdIl90V
-qIAvecqu7h7Sw1h0q1PzU6/5HJvxNG54CCBbRTiB2YjG6v2vjeZX0B/8dRD7Q4wc
-j1OTMMsbFqI4uVoYln8JHzpLUhQkto5DjN2gE2FFADCBCF/jePu6I8PiQH10iPP9
-Ob4vO8+peErS4+bQU6lg+2P83NiTW3JWIFxmmz/NBfHFOQjxRd3kqcLmTJK+zvuR
-1DPC9ccS41RRsjlC4yb8HL5/YUq8Y+HORqoHFKL4IWK8Q9Bb1e4m9RuZhPuBagB+
-bCI1CRRHIfwK/s8ZH4HGgYUP2OHJ0knjWZ7xLWoPRWZL7YISxmUjzDUl3WbjBDkv
-ItYDEyCZx2BPlqVyOwUz8QVcEOBr2F+vqBUQ8lROWgFmoqVWszW8LVUrctY8hTyZ
-Msu0MOm1Y52MS8jm3cQW4H/PK70FrqcR46wfKksk9DvNSygQlXxvgQAC8SEj0ys5
-cv7nd6LU2gApMjvMxNIoUQntAGY/OTGJ0li6hF3u46ouJAImdSirTzMRWr0Ec7YZ
-tOmyjqQE4m0m4wOepEEk9fDXvwo6STcI0OyEXL27jFZlnwgnCaH5JmDSrdjx2RDG
-jsXIOT8+Yc+3gQ4b0R5VrIpnabRhbl07dSkh9I3xtTjdZl9WI7kMAZ3a9gH9HqjX
-kBq9Ceqg+1xz+z/zxe4Y6n7vCMz0zhZfPSDgAlp9fts3p2wg8+hvdrMAWLC2beSq
-oMNLTGclKYk95ql6BlrSgC9M0R1NCtWuk2rpiO+vzj6dKjnYsySztwyaPQcCPJx1
-B+mbkYFuo0GfPr+ZHTrAQsR5MRd2d4qyJDtrlpX64RskeziUF5Ts4s40xzFTHn72
-xlIw7YV3xYxpG2VTxYmHjI5ofnT90/AU0nMVb3No1PQC5QxXME43Yit5ATUM5I4b
-M3a/B/X1uT01nNSnKbRYoAYyH/qJrcZb6aF2zN4MpnIAWgi0QJTBJ1JXPMWesP2b
-HwwUIv+TtzePXAiPGrJm5cBVE2FsTl/s5NTgoNm5w+QdZc6S7fzGHqrUHwvp2YJ8
-Pb6QTYgSXoY1YGkl9ChmFd6YsRoDr7Uvo7hVQpPcFMM/gSWhN6/x0GqKgKq/VUIe
-JT5jh6sAXuU/t9Wv7tPMT6/QgYaQYY68kpN4OGyp1DxvPHreOgclf6T/kaPW8VAH
-Rq24Qmv0bmFPonvcNyiusb1AkHIddxMkXgXl1OJCZI6E07OK8wCtjsLcG1dnpWss
-h9caBTOyZV/5f4hb7wZXWbSwUrMacqotXaH4qExkhBnOZl83loR8wlh5BZUECKF/
-KSaKb6mPWz23R0Fv6eaieQ==
+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
+kME1ScPlE9S1MuO4InOkAg==
 -----END ENCRYPTED PRIVATE KEY-----
 ```
 
@@ -99,21 +104,21 @@ KSaKb6mPWz23R0Fv6eaieQ==
     <img src="images/logbook11/prime-numbers.png">
 </details>
 
-
 ### Tarefa 2
- 
+
 Gerámos um certificado para o site www.dsg.com através do seguinte comando:
+
 ```bash
-openssl req -newkey rsa:2048 -sha256 \
-    -keyout server.key -out server.csr \
-    -subj "/CN=www.dsg.com/O=DSG INC./C=PT" \
-    -passout pass:dees
+openssl req -newkey rsa:2048 -sha256 -keyout server.key -out server.csr -subj "/CN=www.dsg2023.com/O=Dsg2023 Inc./C=US" -passout pass:dees
 ```
+
 Através dos seguintes comando conseguimos ver o conteúdo do CSR e da chave privada:
+
 ```bash
 openssl req -in server.csr -text -noout
 openssl rsa -in server.key -text -noout
 ```
+
 <details>
     <summary>CSR</summary>
     <img src="images/logbook11/t2-csr.png">
@@ -124,7 +129,6 @@ openssl rsa -in server.key -text -noout
     <hr>
 
 ```bash
-
 RSA Private-Key: (2048 bit, 2 primes)
 modulus:
     00:b2:cc:30:fa:58:32:7f:2c:4b:7e:4a:c8:6b:f0:
@@ -215,22 +219,142 @@ coefficient:
     a2:ab:bb:71:e1:69:26:f9:8b:0f:f9:0d:4d:35:4d:
     f8:dd:82:b3:4f:60:dc:a6:b4:6a:00:70:73:7e:61:
     10:ad:e2:ca:ce:ce:29:b8
-
 ```
+
 </details>
 
 Com o seguinte comando adicionamos 2 nomes alternativos ao certificado:
+
 ```bash
-openssl req -newkey rsa:2048 -sha256 \
--keyout server.key -out server.csr \
--subj "/CN=www.dsg.com/O=DSG INC./C=PT" \
--passout pass:dees \
--addext "subjectAltName = DNS:www.dsg.com, DNS:www.dsg1.com, DNS:www.dsg2.com"
+openssl req -newkey rsa:2048 -sha256 -keyout server.key -out server.csr -subj "/CN=www.dsg2023.com/O=Dsg2023 Inc./C=US" -passout pass:dees -addext "subjectAltName = DNS:www.dsg2023.com, DNS:www.dsg2023A.com, DNS:www.dsg2023B.com"
 ```
+
 Ao correr o comando `openssl req -in server.csr -text -noout` podemos verificar que os nomes alternativos foram adicionados:
 
-<img src="images/logbook11/t2-alt-names.png">
-
+```bash
+Requested Extensions:
+            X509v3 Subject Alternative Name: 
+                DNS:www.dsg2023.com, DNS:www.dsg2023A.com, DNS:www.dsg2023B.com
+    Signature Algorithm: sha256WithRSAEncryption
+```
 
 ### Tarefa 3
 
+De maneira a tornar válido o CSR criado na tarefa anterior, é necessário assiná-lo com a chave privada da CA. Para isso, usamos o seguinte comando:
+
+```bash
+openssl ca -config openssl.cnf -policy policy_anything -md sha256 -days 3650 -in server.csr -out server.crt -batch -cert ca.crt -keyfile ca.key
+```
+
+No entanto, antes de podermos correr este comando devemos alterar o ficheiro `openssl.cnf` de modo a que o campo `copy_extensions` esteja descomentado. Por motivos de segurança, este campo está desativado, uma vez que permite que o comando `openssl ca` copie o campo de extensão do pedido para o certificado final.
+
+<details>
+    <summary>Output</summary>
+    <hr>
+    
+```bash
+$ sudo openssl ca -config openssl.cnf -policy policy_anything -md sha256 -days 3650 -in server.csr -out server.crt -batch -cert ca.crt -keyfile ca.key
+Using configuration from openssl.cnf
+Enter pass phrase for ca.key:
+Check that the request matches the signature
+Signature ok
+Certificate Details:
+        Serial Number: 4096 (0x1000)
+        Validity
+            Not Before: Dec 11 00:36:31 2023 GMT
+            Not After : Dec  8 00:36:31 2033 GMT
+        Subject:
+            countryName               = US
+            organizationName          = Dsg2023 Inc.
+            commonName                = www.dsg2023.com
+        X509v3 extensions:
+            X509v3 Basic Constraints: 
+                CA:FALSE
+            Netscape Comment: 
+                OpenSSL Generated Certificate
+            X509v3 Subject Key Identifier: 
+                6A:25:CC:5F:66:E7:AC:27:A4:27:D5:0C:C4:C9:BE:25:77:DF:7E:90
+            X509v3 Authority Key Identifier: 
+                keyid:0C:BC:0B:55:E2:DE:62:AE:BA:26:A4:E6:3F:9F:34:E0:47:07:9D:5B
+
+            X509v3 Subject Alternative Name: 
+                DNS:www.dsg2023.com, DNS:www.dsg2023A.com, DNS:www.dsg2023B.com
+Certificate is to be certified until Dec  8 00:36:31 2033 GMT (3650 days)
+
+Write out database with 1 new entries
+Data Base Updated
+```
+
+</details>
+
+<hr>
+
+# Tarefa 4
+
+Nesta tarefa configuraremos um servidor Apache para suportar HTTPS. Para isso, apenas precisamos de configurar o servidor Apache para que ele saiba onde obter a chave privada e os certificados.
+Como um servidor Apache pode hospedar vários sites, ele precisa de saber em que pasta estão os ficheiros de cada site. Esta tarefa é feita através do ficheiro VirtualHost, localizado na pasta `/etc/apache2/sites-available`. Na config do nosso container, é feita uma cópia do ficheiro `dsg2023.conf` para a pasta `/etc/apache2/sites-enabled`, que é a pasta onde o Apache procura os ficheiros de configuração dos sites que estão ativos.
+
+```bash
+<VirtualHost *:443> 
+    DocumentRoot /var/www/dsg2023
+    ServerName www.dsg2023.com
+    ServerAlias www.dsg2023.com
+    ServerAlias www.dsg2023A.com
+    ServerAlias www.dsg2023B.com
+    ServerAlias www.dsg2023W.com
+    DirectoryIndex index.html
+    SSLEngine On 
+    SSLCertificateFile /certs/dsg2023.crt
+    SSLCertificateKeyFile /certs/dsg2023.key
+</VirtualHost>
+
+<VirtualHost *:80> 
+    DocumentRoot /var/www/dsg2023
+    ServerName www.dsg2023.com
+    DirectoryIndex index_red.html
+</VirtualHost>
+
+# Set the following gloal entry to suppress an annoying warning message
+ServerName localhost
+```
+
+Ao corrermos o comando:
+
+```bash
+service apache2 start
+```
+
+o servidor Apache começa a correr e podemos aceder ao site através do browser. No entanto, como o certificado não é assinado por uma CA reconhecida, o browser mostra um aviso de segurança:
+
+![Alt text](images/logbook11/dsg-unsafe.png)
+
+Para resolver este problema, acedemos ao link `about:preferences#privacy` e abrimos o menu `View Certificates`. Neste menu, importamos o certificado da CA que criámos no início da tarefa:
+
+|||
+| -- | -- |
+| ![Alt text](images/logbook11/add-ca.png) | ![Alt text](images/logbook11/feup-dsg.png) |
+
+Depois de importar o certificado, o browser já não mostra o aviso de segurança:
+
+![Alt text](images/logbook11/dsg-safe.png)
+
+# Tarefa 5
+
+Nesta tarefa, devemos tentar simular um man-in-the-middle attack. Para tal, devemos editar o campo `ServerName`
+no nosso ficheiro `dsg2023_apache_ssl.conf` para ter o link para o site que pretendemos simular. Neste caso, vamos simular o site do Facebook. Deixamos os restantes campos iguais. Depois devemos também editar o ficheiro `/etc/hosts` adicionando a linha: `10.9.0.80 www.facebook.com` para que, quando o browser tentar aceder ao site do Facebook, seja redirecionado para o nosso servidor Apache.
+
+Depois de correr o comando `service apache2 start`, podemos aceder ao site do Facebook através do browser. No entanto, como o certificado não é assinado por uma CA reconhecida, o browser mostra outra vez um aviso de segurança:
+
+![Alt text](images/logbook11/facebook-unsafe.png)
+
+Isto acontece porque o certificado que estamos a usar apenas assinou o site www.dsg2023.com e não o site www.facebook.com. Este promenor é verificado pelo browser e, como o certificado não é válido para o site que estamos a tentar aceder, o browser mostra o aviso de segurança.
+
+# Tarefa 6
+
+```bash
+$ openssl req -newkey rsa:2048 -sha256 -keyout server.key -out server.csr -subj "/CN=www.facebook.com/O=Dsg2023 Inc./C=US" -passout pass:dees -addext "subjectAltName = DNS:www.facebook.com, DNS:www.dsg2023.com, DNS:www.dsg2023A.com, DNS:www.dsg2023B.com"
+```
+
+```bash
+openssl ca -config openssl.cnf -policy policy_anything -md sha256 -days 3650 -in server.csr -out server.crt -batch -cert ca.crt -keyfile ca.key
+```
