@@ -351,10 +351,19 @@ Isto acontece porque o certificado que estamos a usar apenas assinou o site www.
 
 # Tarefa 6
 
+De modo a completar o nosso man-in-the-middle attack, devemos adicionar um certificado para a nossa versão atualizada do site www.dsg2023.com, agora com o nome www.facebook.com. Para isso corremos o comando:
+
 ```bash
 $ openssl req -newkey rsa:2048 -sha256 -keyout server.key -out server.csr -subj "/CN=www.facebook.com/O=Dsg2023 Inc./C=US" -passout pass:dees -addext "subjectAltName = DNS:www.facebook.com, DNS:www.dsg2023.com, DNS:www.dsg2023A.com, DNS:www.dsg2023B.com"
 ```
 
+de modo a criar um pedido de certificação para o nosso site mascarado. Podemos aceitá-lo com a nossa self-signed key através do comando:
+
 ```bash
 openssl ca -config openssl.cnf -policy policy_anything -md sha256 -days 3650 -in server.csr -out server.crt -batch -cert ca.crt -keyfile ca.key
 ```
+
+Deste modo, o nosso site já é coniderado seguro pelo browser. Se acedermos ao mesmo através do firefox obtemos o seguinte resultado:
+
+![Alt text](images/logbook11/facebook-safe.png)
+
