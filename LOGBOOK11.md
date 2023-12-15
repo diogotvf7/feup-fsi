@@ -367,3 +367,4 @@ Deste modo, o nosso site já é coniderado seguro pelo browser. Se acedermos ao 
 
 ![Alt text](images/logbook11/facebook-safe.png)
 
+Podemos verificar que a proteção oferecida pelos browsers através da `Public-Key Infrastrucure` não é infalível uma vez que,  
