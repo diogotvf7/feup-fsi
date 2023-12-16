@@ -2,9 +2,9 @@
 
 ## Introdução
 
-Para este CTF é-nos dado um ficheiro `challenge.py` que contém o código que corre na porta `6004` do servidor `ctf-fsi.fe.up.pt`. Este código tem 3 funções das quais apenas duas são relevantes para a resolução do desafio: `enc` e `dec`. Estas funções baseiam a sua encriptação no algoritmo RSA, que é um algoritmo de encriptação assimétrica. 
+Para este CTF é-nos dado um ficheiro `challenge.py` que contém o código que corre na porta `6004` do servidor `ctf-fsi.fe.up.pt`. Este código tem duas são relevantes para a resolução do desafio: `enc` e `dec`. Estas funções baseiam a sua encriptação no algoritmo RSA, que é um algoritmo de encriptação assimétrica. 
 Este algoritmo baseia-se na existência de duas chaves, uma pública e outra privada. Chaves públicas são usadas para encriptar mensagens e chaves privadas são usadas para desencriptar mensagens. 
-Ao corrermos o comando `nc ctf-fsi.fe.up.pt 6004` obtemos o seguinte output:
+Ao corrermos o comando `nc ctf-fsi.fe.up.pt 6004` obtemos o seguin  te output:
 
 ```bash
 Public parameters -- 
